@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="0dp"
+		android:layout_weight="2.25"
+		android:layout_height="match_parent">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Edit or Use Order:"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_marginLeft="40dp"
+			android:layout_marginTop="20dp"
+			android:id="@+id/txtLoad"/>
+
+		<ListView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="40dp"
+			android:layout_marginBottom="20dp"
+			android:id="@+id/listLoad"
+			android:paddingTop="10dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_weight="2"
+		android:layout_height="match_parent"
+		android:gravity="right"
+		android:padding="5dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="300dp"
+			android:layout_weight="2"
+			android:layout_height="match_parent"
+			android:layout_marginRight="60dp"
+			android:gravity="right|center_vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Create New Order:"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:gravity="left"
+				android:layout_gravity="center"
+				android:id="@+id/txtCreate"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ems="15"
+				android:gravity="center"
+				android:id="@+id/etCreate"
+				android:textAlignment="textStart"
+				android:inputType="textNoSuggestions"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Create"
+				android:id="@+id/btnCreate"
+				android:layout_marginBottom="220dp"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="v0.24"
+			android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

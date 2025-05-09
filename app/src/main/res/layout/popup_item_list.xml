@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="450dp"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:id="@+id/item_list_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Current Order"
+		android:textSize="24sp"
+		android:gravity="left"
+		android:padding="8dp"
+		android:background="#6C6C6C"
+		android:textColor="#FFFFFF"
+		android:textColorHighlight="#CEFFFF"/>
+
+	<ListView
+		android:id="@+id/item_list_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/item_list_title"
+		android:divider="@android:color/transparent"
+		android:dividerHeight="4dp"
+		android:background="#F4F4F4"/>
+
+	<Button
+		android:id="@+id/btnPopupHide"
+		android:layout_width="100dp"
+		android:layout_height="50dp"
+		android:text="DONE"
+		android:textColor="#4E4E4E"
+		android:textSize="16sp"
+		android:padding="8dp"
+		android:shadowColor="#000000"
+		android:shadowRadius="1.5"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"/>
+
+	<TextView
+		android:id="@+id/txtPopupTotal"
+		android:layout_width="80dp"
+		android:layout_height="wrap_content"
+		android:text="Total"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_above="@id/btnPopupHide"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="16dp"
+		android:layout_marginBottom="16dp"
+		android:gravity="bottom|right"
+		android:background="#F4F4F4"/>
+
+</RelativeLayout>
+
